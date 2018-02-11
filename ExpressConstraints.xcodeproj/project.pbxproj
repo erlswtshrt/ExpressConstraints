@@ -10,6 +10,7 @@
 		FC9B29E72030C50600D8173F /* ExpressConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9B29DD2030C50600D8173F /* ExpressConstraints.framework */; };
 		FC9B29EC2030C50600D8173F /* ExpressConstraintsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9B29EB2030C50600D8173F /* ExpressConstraintsTests.swift */; };
 		FC9B29EE2030C50600D8173F /* ExpressConstraints.h in Headers */ = {isa = PBXBuildFile; fileRef = FC9B29E02030C50600D8173F /* ExpressConstraints.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC9B29F82030C54800D8173F /* UIView+ExpressConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9B29F72030C54800D8173F /* UIView+ExpressConstraints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		FC9B29E62030C50600D8173F /* ExpressConstraintsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpressConstraintsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC9B29EB2030C50600D8173F /* ExpressConstraintsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressConstraintsTests.swift; sourceTree = "<group>"; };
 		FC9B29ED2030C50600D8173F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC9B29F72030C54800D8173F /* UIView+ExpressConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ExpressConstraints.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				FC9B29E02030C50600D8173F /* ExpressConstraints.h */,
 				FC9B29E12030C50600D8173F /* Info.plist */,
+				FC9B29F72030C54800D8173F /* UIView+ExpressConstraints.swift */,
 			);
 			path = ExpressConstraints;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					FC9B29DC2030C50600D8173F = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					FC9B29E52030C50600D8173F = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC9B29F82030C54800D8173F /* UIView+ExpressConstraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		FC9B29F22030C50600D8173F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -346,6 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = test.ExpressConstraints;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,6 +361,7 @@
 		FC9B29F32030C50600D8173F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -374,6 +382,7 @@
 		FC9B29F52030C50600D8173F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ExpressConstraintsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -387,6 +396,7 @@
 		FC9B29F62030C50600D8173F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ExpressConstraintsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
