@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension UIView {
+public extension UIView {
     
     enum XAlignmentType {
         case left
