@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author              = { "John Earle" => "johnearle01@gmail.com" }
   s.social_media_url    = "https://twitter.com/mangomoscato"
   s.platform            = :ios, "8.0"
-  s.source              = { :git => "git@github.com:erlswtshrt/ExpressConstraints.git", :tag => "v1.0.0" }
+  s.source              = { :git => "https://github.com/erlswtshrt/ExpressConstraints.git", :tag => "v1.0.0" }
   s.source_files        = "ExpressConstraints/UIView+ExpressConstraints.swift"
-  s.public_header_files = ""
+  s.swift_version       = "3.2"
 end
