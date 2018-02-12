@@ -1,9 +1,7 @@
 //
 //  UIView+Constraints.swift
-//  connectedKeyboard
 //
-//  Created by John Earle on 3/1/17.
-//  Copyright © 2017 Salesforce. All rights reserved.
+//  Created by John Earle on 2/11/17.
 //
 
 import Foundation
