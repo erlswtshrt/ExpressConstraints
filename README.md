@@ -1,10 +1,39 @@
 # Express Constraints
 
-Express Constraints is a lightweight layout library for Swift and Objective-C.
+Express Constraints is a lightweight layout / constraint library for Swift and Objective-C.
 
 ## Methodology
 
-For developers who like to know exactly what's going on with their code, XCode's Storyboard and auto layout can be a nightmare. It creates a layer of abstraction between the developer and the code, and  many times leads to two inconsisent sources of truth for layout and flow. For this reason, it is often best to ditch Storybook and go about layouts purely programatically. Unfortunately, the default NSConstraint API is extremely verbose. Express Constraints provides a lightweight wrapper around this API in the form of a UIView extension.
+XCode's Storyboard and auto layout create a layer of abstraction between the developer and the code, and often lead to inconsisent sources of truth for layout and flow. For this reason, it is sometimes best to ditch Storybook and go about layouts purely programatically. Unfortunately, the default NSConstraint API is extremely verbose. Express Constraints provides a lightweight wrapper around this API in the form of a UIView extension.
+
+## Installation
+
+Express Constraints can be installed via CocoaPods.
+
+Include the following under `use_frameworks!` in your project's Podfile:
+
+```
+pod 'ExpressConstraints'
+```
+
+Then run a `pod install`
+
+In your project's target, navigate to 'General' > 'Embedded Binaries' and add the ExpressConstraints.framework file.
+
+## Usage
+
+Import Express Constraints at the top of project files:
+
+```
+import ExpressConstraints
+```
+
+The framework is based on an extension of UIView. To access the api, use dot completion on an UIView. For example:
+
+```
+var view = UIView()
+view.constrainabove(...
+```
 
 ## API
 
